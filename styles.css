@@ -1,0 +1,14 @@
+#container {
+    text-align: center;
+}
+#reset-button {
+    border-radius: 5px;
+    border: solid blue 2px;
+    color: blue;
+    padding: 5px;
+    cursor: pointer;
+}
+#reset-button:hover {
+    background-color: blue;
+    color: white;
+}
