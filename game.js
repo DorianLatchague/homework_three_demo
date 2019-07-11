@@ -12,7 +12,7 @@ var game = {
     losses: 0,
     // game.addOnKeyUp adds the document.onkeyup function when the game starts
     addOnKeyUp: function() {
-        that = this; //this is a neat trick that allows you to hold on to this even in a different scope
+        var that = this; //this is a neat trick that allows you to hold on to this even in a different scope
         document.onkeyup = function(event) {
             if (alphabet.includes(event.key.toLowerCase())){
                 if (that.letter === event.key.toLowerCase()){
@@ -49,7 +49,7 @@ var game = {
     },
     // game.addResetButton adds a reset button that will restart the game when clicked
     addResetButton: function() {
-        that = this; // same trick to hold on to this inside the different scope
+        var that = this; // same trick to hold on to this inside the different scope
         // we need to create a reset button and put it in the container
         var container = document.getElementById("container");
         var newButton = document.createElement("button");
